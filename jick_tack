@@ -1,0 +1,14 @@
+
+def jick_tack(number):
+
+    if (int(number) % 3 == 0) and (int(number) % 5 == 0):
+        return "JickTack"
+    if int(number) % 3 == 0:
+        return "Jick"
+    if int(number) % 5 == 0:
+        return "Tack"
+    else:
+        return number
+
+
+print(jick_tack(input("Write your number: ")))
