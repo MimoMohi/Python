@@ -1,0 +1,17 @@
+def find_duplicates(in_list):
+
+    unique = set(in_list)
+    for i in unique:
+        count = in_list.count(i)
+        if count > 1:
+            print('There are duplicates')
+            return True
+    print ('There are no duplicates')
+    return False
+
+
+if __name__ == '__main__':
+
+    a = [3, 1, 5, 9, 2, 8, 6, 7]
+    print(a)
+    find_duplicates(a)
